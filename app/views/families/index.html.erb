@@ -1,0 +1,29 @@
+<h1>Listing families</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>State</th>
+    <th>Televisions</th>
+    <th>Hours spent watching</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @families.each do |family| %>
+  <tr>
+    <td><%= family.name %></td>
+    <td><%= family.state %></td>
+    <td><%= family.televisions %></td>
+    <td><%= family.hours_spent_watching %></td>
+    <td><%= link_to 'Show', family %></td>
+    <td><%= link_to 'Edit', edit_family_path(family) %></td>
+    <td><%= link_to 'Destroy', family, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Family', new_family_path %>

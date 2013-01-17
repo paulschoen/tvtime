@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  state: MyString
+  televisions: 1
+  hours_spent_watching: 1
+
+two:
+  name: MyString
+  state: MyString
+  televisions: 1
+  hours_spent_watching: 1
