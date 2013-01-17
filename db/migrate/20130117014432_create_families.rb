@@ -1,6 +1,5 @@
 class CreateFamilies < ActiveRecord::Migration
   def change
-    drop_table :families
     create_table :families do |t|
       t.string :name
       t.string :state
